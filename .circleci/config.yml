@@ -14,12 +14,11 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: "Say hello"
+      - run: 
           command: |
-              "echo $DB_PASSWORD"
-              "echo $JSON"
-              "echo $JSON_BIG"
+             echo $DB_PASSWORD
+             echo $JSON
+             echo $JSON_BIG
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
